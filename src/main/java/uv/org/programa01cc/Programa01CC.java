@@ -7,10 +7,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Angel
- */
+
 public class Programa01CC {
 
     public static void main(String[] args) {
@@ -18,11 +15,11 @@ public class Programa01CC {
             Statement st = null;
         try {
   
-            String url = "jdbc:postgresql://localhost:7000/emp";
-            String usuario = "postgres";
-            String contra = "password";
+            String url = "jdbc:postgresql://localhost:7000/programauno";
+            String usuario = "azr";
+            String contra = "azr";
             String sql= "insert into prueba (id, nombre, telefono, direccion) values"
-                    + "('02','Jona', '2342342', 'Av 2 ')";
+                    + "('01','Arturo', '1223455', 'Tlacotengo ')";
             
             con = DriverManager.getConnection(url,usuario,contra);
             Logger.getLogger(Programa01CC.class.getName()).log(Level.INFO, "Se conecto la BD");
